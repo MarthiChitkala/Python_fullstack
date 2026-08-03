@@ -1,72 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
-  <title>Course page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Courses</title>
 </head>
-
 <body>
-  <header>
-    Home <br />
-    <h1>Courses in NRIIT Learning Management</h1>
-    <p>Learn Practice Get Placed</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="trainers.html">Trainers</a>
-      <a href="register.html">Register</a>
-      <a href="login.html">Login</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="brand-mark">N</div>
+        <div>
+          <h1>Courses at NRIIT</h1>
+          <p>Learn • Practice • Get Placed</p>
+        </div>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="courses.html">Courses</a>
+        <a href="trainers.html">Trainers</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <h2>Courses Offered</h2>
-    <table border="|" cellpadding="10">
-      <tr>
-        <th>Course</th>
-        <th>Duration</th>
-        <th>Mode</th>
-      </tr>
-      <tr>
-        <td>Python FullStack</td>
-        <td>6 Months</td>
-        <td>Offline</td>
-      </tr>
-    </table>
-    <section>
-      <h2>Learning Path</h2>
-      <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Flask</li>
-        <li>Database</li>
+
+  <main class="container">
+    <section class="table-card">
+      <h3>Courses Offered</h3>
+      <table>
+        <tr>
+          <th>Course</th>
+          <th>Duration</th>
+          <th>Mode</th>
+        </tr>
+        <tr>
+          <td>Python Full Stack</td>
+          <td>6 Months</td>
+          <td>Offline / Hybrid</td>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>3 Months</td>
+          <td>Online</td>
+        </tr>
+        <tr>
+          <td>Data Structures</td>
+          <td>2 Months</td>
+          <td>Offline</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="info-panel">
+      <h3>Learning Path</h3>
+      <ol class="list-stack">
+        <li>HTML and CSS fundamentals</li>
+        <li>JavaScript and DOM interactions</li>
+        <li>Python and Flask backend development</li>
+        <li>Database design and SQL</li>
+        <li>Mini projects and portfolio building</li>
       </ol>
     </section>
   </main>
+
   <footer>
-
-    <hr>
-
-    <p>&copy; 2026 NRIIT Learning Management System</p>
-
-    <p>Email: info@nriit.edu</p>
-
-    <p>Phone: +91 9876543210</p>
-
-    <p>Follow Us:</p>
-
-    <a href="#">Facebook</a> |
-
-    <a href="#">Instagram</a> |
-
-    <a href="#">LinkedIn</a>
-
+    <div class="container">
+      <p>&copy; 2026 NRIIT Learning Management System</p>
+      <p>Email: info@nriit.edu | Phone: +91 9876543210</p>
+    </div>
   </footer>
-</body>
 
+  <script src="js/script.js"></script>
+</body>
 </html>

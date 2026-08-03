@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/style.css">
-    <title>Register page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
 </head>
-
 <body>
-    <header>Register</header>
-    <main>
-        <h2>Student Registration </h2>
-        <form>
-            <label>Full Name</label><br>
-            <input type="text" placeholder="Enter Your Name"><br>
-            <label>Email</label><br>
-            <input type="email" placeholder="Enter your email"><br>
-            <label>Password</label><br>
-            <input type="password" placeholder="Enter Your Password"><br>
-            <label>Date of Birth</label><br>
-            <input type="date" placeholder="DOB"><br>
-            <label>Gender</label><br>
-            <input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female <br><br>
-            <label>Select Course</label>
-            <br>
-            <select>
-                <option>Python FullStack</option>
-                <option>Java FullStack</option>
-            </select>
-        </form>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-mark">N</div>
+                <div>
+                    <h1>Register Now</h1>
+                    <p>Learn • Practice • Get Placed</p>
+                </div>
+                <button class="nav-toggle" aria-label="Open menu">☰</button>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="trainers.html">Trainers</a>
+                <a class="active" href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <h3>Student Registration</h3>
+            <p>Secure your seat in the next batch by completing the form below.</p>
+            <form id="registerForm">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter your password" required>
+
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date" required>
+
+                <label>Gender</label>
+                <div class="button-row">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+
+                <label for="course">Select Course</label>
+                <select id="course">
+                    <option>Python Full Stack</option>
+                    <option>Web Development</option>
+                    <option>Data Structures</option>
+                </select>
+
+                <button type="submit">Register</button>
+                <p class="form-message" id="registerMessage"></p>
+            </form>
+        </section>
     </main>
 
-</body>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 NRIIT Learning Management System</p>
+            <p>Email: info@nriit.edu | Phone: +91 9876543210</p>
+        </div>
+    </footer>
 
+    <script src="js/script.js"></script>
+</body>
 </html>

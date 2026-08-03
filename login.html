@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/style.css">
-    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
 </head>
-
 <body>
-    <header>Login</header>
-    <main>
-        <h2>Student Login</h2>
-        <form>
-            <label>Email</label><br>
-            <input type="email" placeholder="Enter your Email"><br>
-            <label>Password</label><br>
-            <input type="password" placeholder="Enter Your Password"> <br>
-            <input type="submit" value="Login">
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-mark">N</div>
+                <div>
+                    <h1>Student Login</h1>
+                    <p>Learn • Practice • Get Placed</p>
+                </div>
+                <button class="nav-toggle" aria-label="Open menu">☰</button>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="trainers.html">Trainers</a>
+                <a href="register.html">Register</a>
+                <a class="active" href="login.html">Login</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-        </form>
+    <main class="container">
+        <section class="form-card">
+            <h3>Welcome Back</h3>
+            <p>Access your learning dashboard and continue your journey.</p>
+            <form id="loginForm">
+                <label for="loginEmail">Email</label>
+                <input id="loginEmail" type="email" placeholder="Enter your email" required>
+
+                <label for="loginPassword">Password</label>
+                <input id="loginPassword" type="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+                <p class="form-message" id="loginMessage"></p>
+            </form>
+        </section>
     </main>
+
     <footer>
-
-        <hr>
-
-        <p>&copy; 2026 NRIIT Learning Management System</p>
-
-        <p>Email: info@nriit.edu</p>
-
-        <p>Phone: +91 9876543210</p>
-
-        <p>Follow Us:</p>
-
-        <a href="#">Facebook</a> |
-
-        <a href="#">Instagram</a> |
-
-        <a href="#">LinkedIn</a>
-
+        <div class="container">
+            <p>&copy; 2026 NRIIT Learning Management System</p>
+            <p>Email: info@nriit.edu | Phone: +91 9876543210</p>
+        </div>
     </footer>
-</body>
 
+    <script src="js/script.js"></script>
+</body>
 </html>

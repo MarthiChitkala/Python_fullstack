@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/style.css">
-    <title>Trainers page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trainers</title>
 </head>
-
 <body>
-    <header>
-        Home <br>
-        <h1>Trainers in NRIIT Learning Management</h1>
-        <p>Learn Practice Get Placed</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="courses.html">Courses</a>
-            <a href="trainers.html">Trainers</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-mark">N</div>
+                <div>
+                    <h1>Meet Our Trainers</h1>
+                    <p>Learn • Practice • Get Placed</p>
+                </div>
+                <button class="nav-toggle" aria-label="Open menu">☰</button>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a class="active" href="trainers.html">Trainers</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Meet Our Trainers</h2>
-            <article>
-                <img src="images/trainer1.jpg" alt="Python Trainer" width="180">
-                class="trainer-image">
+
+    <main class="container">
+        <section class="trainer-grid">
+            <article class="trainer-card">
+                <div class="avatar">SR</div>
                 <h3>Mr. Sriram</h3>
                 <p>Python Full Stack Trainer</p>
-                <p>Experience: 4+ years</p>
+                <p>4+ years of teaching experience in development and web apps.</p>
+            </article>
+            <article class="trainer-card">
+                <div class="avatar">AN</div>
+                <h3>Ms. Anjali</h3>
+                <p>Frontend Development Mentor</p>
+                <p>Specializes in HTML, CSS, JavaScript and responsive design.</p>
+            </article>
+            <article class="trainer-card">
+                <div class="avatar">RK</div>
+                <h3>Mr. Ravi</h3>
+                <p>Placement and Project Coach</p>
+                <p>Guides students through interviews, resumes, and portfolio projects.</p>
             </article>
         </section>
     </main>
+
     <footer>
-
-        <hr>
-
-        <p>&copy; 2026 NRIIT Learning Management System</p>
-
-        <p>Email: info@nriit.edu</p>
-
-        <p>Phone: +91 9876543210</p>
-
-        <p>Follow Us:</p>
-
-        <a href="#">Facebook</a> |
-
-        <a href="#">Instagram</a> |
-
-        <a href="#">LinkedIn</a>
-
+        <div class="container">
+            <p>&copy; 2026 NRIIT Learning Management System</p>
+            <p>Email: info@nriit.edu | Phone: +91 9876543210</p>
+        </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
-
 </html>

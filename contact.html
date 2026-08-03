@@ -1,106 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/style.css">
-    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact</title>
 </head>
-
 <body>
-    <header>
-        Home <br>
-        <h1>Contact NRIIT Learning Management</h1>
-        <p>Learn Practice Get Placed</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="courses.html">Courses</a>
-            <a href="trainers.html">Trainers</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-mark">N</div>
+                <div>
+                    <h1>Contact NRIIT</h1>
+                    <p>Learn • Practice • Get Placed</p>
+                </div>
+                <button class="nav-toggle" aria-label="Open menu">☰</button>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="trainers.html">Trainers</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
 
-        <section>
+    <main class="container">
+        <div class="contact-grid">
+            <section class="info-panel">
+                <h3>Contact Us</h3>
+                <p>NRI Institute of Information Technology</p>
+                <p>Agiripalli, Andhra Pradesh</p>
+                <p>Email: info@nriit.edu</p>
+                <p>Phone: +91 9876543210</p>
+            </section>
+            <section class="info-panel">
+                <h3>Campus Tour</h3>
+                <iframe src="https://www.google.com/maps?q=Agiripalli&output=embed" height="250" style="border:0;width:100%;" allowfullscreen></iframe>
+            </section>
+        </div>
 
-            <h2>Contact Us</h2>
-
-            <p>NRI Institute of Information Technology</p>
-
-            <p>Agiripalli, Andhra Pradesh</p>
-
-            <p>Email: info@nriit.edu</p>
-
-            <p>Phone: +91 9876543210</p>
-
+        <section class="section-grid">
+            <article class="card">
+                <h3>Institute Introduction</h3>
+                <p>Listen to our institute overview and experience the learning environment.</p>
+            </article>
+            <article class="card">
+                <h3>Python Introduction</h3>
+                <p>Watch a beginner-friendly Python session to see the kind of content you will learn.</p>
+            </article>
+            <article class="card">
+                <h3>Get in Touch</h3>
+                <p>Call, email, or visit the campus for admission guidance and demo classes.</p>
+            </article>
         </section>
-        <section>
-
-            <h2>Institute Audio</h2>
-
-            <audio controls>
-
-                <source src="audio/intro.mp3" type="audio/mpeg">
-
-            </audio>
-
-        </section>
-        <section>
-
-            <h2>Campus Tour</h2>
-
-            <video width="500" controls>
-
-                <source src="video/intro.mp4" type="video/mp4">
-
-            </video>
-
-        </section>
-        <section>
-
-            <h2>Python Introduction</h2>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video"
-                allowfullscreen>
-
-            </iframe>
-
-        </section>
-        <section>
-
-            <h2>Locate Us</h2>
-
-            <iframe src="https://www.google.com/maps?q=Agiripalli&output=embed" width="600" height="350">
-
-            </iframe>
-
-        </section>
-
     </main>
+
     <footer>
-
-        <hr>
-
-        <p>&copy; 2026 NRIIT Learning Management System</p>
-
-        <p>Email: info@nriit.edu</p>
-
-        <p>Phone: +91 9876543210</p>
-
-        <p>Follow Us:</p>
-
-        <a href="#">Facebook</a> |
-
-        <a href="#">Instagram</a> |
-
-        <a href="#">LinkedIn</a>
-
+        <div class="container">
+            <p>&copy; 2026 NRIIT Learning Management System</p>
+            <p>Email: info@nriit.edu | Phone: +91 9876543210</p>
+        </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
-
 </html>
