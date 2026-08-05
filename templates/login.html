@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/static/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Login</title>
 </head>
 <body>
@@ -18,13 +18,13 @@
                 <button class="nav-toggle" aria-label="Open menu">☰</button>
             </div>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="courses.html">Courses</a>
-                <a href="trainers.html">Trainers</a>
-                <a href="register.html">Register</a>
-                <a class="active" href="login.html">Login</a>
-                <a href="contact.html">Contact</a>
+                <a href="/">Home</a>
+                <a class="active" href="/about">About</a>
+                <a href="/courses">Courses</a>
+                <a href="/trainers">Trainers</a>
+                <a href="/register">Register</a>
+                <a href="/login">Login</a>
+                <a href="/contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -33,7 +33,8 @@
         <section class="form-card">
             <h3>Welcome Back</h3>
             <p>Access your learning dashboard and continue your journey.</p>
-            <form id="loginForm">
+            <form id="loginForm" method="POST">
+            </form>>
                 <label for="loginEmail">Email</label>
                 <input id="loginEmail" type="email" placeholder="Enter your email" required>
 

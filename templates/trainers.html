@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/static/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Trainers</title>
 </head>
 <body>
@@ -18,13 +18,13 @@
                 <button class="nav-toggle" aria-label="Open menu">☰</button>
             </div>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="courses.html">Courses</a>
-                <a class="active" href="trainers.html">Trainers</a>
-                <a href="register.html">Register</a>
-                <a href="login.html">Login</a>
-                <a href="contact.html">Contact</a>
+                <a href="/">Home</a>
+                <a class="active" href="/about">About</a>
+                <a href="/courses">Courses</a>
+                <a href="/trainers">Trainers</a>
+                <a href="/register">Register</a>
+                <a href="/login">Login</a>
+                <a href="/contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -32,10 +32,13 @@
     <main class="container">
         <section class="trainer-grid">
             <article class="trainer-card">
-                <div class="avatar">SR</div>
-                <h3>Mr. Sriram</h3>
-                <p>Python Full Stack Trainer</p>
-                <p>4+ years of teaching experience in development and web apps.</p>
+    <img src="{{ url_for('static', filename='image/trainers.jpg') }}"
+         alt="Mr. Sriram"
+         class="trainer-image">
+
+    <h3>Mr. Sriram</h3>
+          <p>Python Full Stack Trainer</p>
+           <p>4+ years of teaching experience in development and web apps.</p>
             </article>
             <article class="trainer-card">
                 <div class="avatar">AN</div>
@@ -61,4 +64,4 @@
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
-</html>
+</html>   
